@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website Landing</title>
+    <!-- Include Font Awesome and Google Fonts files if needed -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu Mono">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+    <div class="header-container">
+        <div class="logo-container">
+            <p class="logo">ScriBBler</p>
+            <p class="logo-subheadig">Explore, Imagine, Create</p>
+        </div>
+        <div class="heading-btn">
+            <button class="header-btn signup" onclick="openSignupModal()">Sign Up</button>
+            <button class="header-btn signin" onclick="openSigninModal()">Sign In</button>
+        </div>
+    </div>
+    <div id="signup-overlay" class="overlay"></div>
+
+
+    <div id="SignUpModal" class="popup">
+        <div class="close-btn" onclick="closeSignupModal()">&times;</div>
+        <div class="form">
+            <h1 class="modal-heading"> Get Started</h1>
+            <div class="form-elements">
+                <label for="name" class="modal-label">Name</label>
+                <input type="text" class="modal-textbox" placeholder="Enter your name" name="name" required>
+            </div>
+            <div class="form-elements">
+                <label for="username" class="modal-label">Username</label>
+                <input type="text" class="modal-textbox" placeholder="Enter your username" name="username" required>
+            </div>
+            <div class="form-elements">
+                <label for="name" class="modal-label">Password</label>
+                <input type="password" class="modal-textbox" placeholder="Enter your password" name="password" required>
+            </div>
+            <div class="form-elements">
+                <label for="name" class="modal-label"> Confirm Password</label>
+                <input type="password" class="modal-textbox" placeholder="Re-enter your password" name="confirm password" required>
+            </div>
+            <div class="form-elements">
+                <button onclick="submitForm()">Sign Up</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  here a signin modal   -->
+    <div id="signin-overlay" class="overlay"></div>
+    <div id="SignInModal" class="popup">
+        <div class="close-btn" onclick="closeSigninModal()">&times;</div>
+        <div class="form">
+            <h1 class="modal-heading"> Welcome Back!</h1>
+            <div class="form-elements">
+                <label for="username" class="modal-label">Username</label>
+                <input type="text" class="modal-textbox" placeholder="Enter your username" name="username" required>
+            </div>
+            <div class="form-elements">
+                <label for="name" class="modal-label">Password</label>
+                <input type="password" class="modal-textbox" placeholder="Enter your password" name="password" required>
+            </div>
+            <div class="form-elements">
+                <button>Sign In</button>
+            </div>
+            <p>Not a member?</p>
+            <a href="#">Sign In</a>
+        </div>
+    </div>
+
+
+    <!-- here start a All post and Create post modal -->
+    <div class="center-btn">
+        <button class="display-btn allposts" onclick="openAllpostsModal()">All Posts</button>
+        <button class="display-btn createposts" onclick="openCreatepostsModal()">Create Posts</button>
+    </div>
+
+    <div id="allposts-overlay" class="overlay"></div>
+    <div id="AllPostsModal" class="popup">
+        <div class="close-btn" onclick="closeAllpostsModal()">&times;</div>
+        <div class="form">
+            <h1 class="modal-heading"> Pen Your Post</h1>
+            <div class="form-elements">
+                <label for="title" class="modal-label">Title</label>
+                <input type="text" class="modal-textbox" placeholder="Enter title of your post" name="title" required>
+            </div>
+            <div class="form-elements">
+                <label for="contents" class="modal-label">Contents</label>
+                <input type="text" class="modal-textbox" placeholder="Enter the contents of your post" name="contents" required>
+            </div>
+            <div class="form-elements">
+                <button>Create</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+body {
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 600;
+    color: blue;
+    font-family: 'Montez', cursive;
+    margin-left: 30px;
+}
+
+.header-btn {
+    margin: 20px 10px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+.heading-btn {
+    margin-left: auto;
+    height: 15px;
+}
+
+.logo-subheadig {
+    font-size: 22px;
+    display: block;
+    font-family: 'Ubuntu Mono';
+    font-weight: 900;
+    margin-left: 30px;
+    color: black;
+}
+
+.display-btn {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 20px;
+    background-color: rgb(245, 108, 66);
+    color: black;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 2px solid white;
+    width: 8%;
+}
+
+.center-btn {
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 290px;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: none;
+    z-index: 1000;
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup .form h1 {
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+.popup .form .form-elements {
+    margin: 15px 0px;
+}
+
+.popup .form .form-elements label {
+    font-size: 14px;
+    color: #222;
+}
+
+.popup .form .form-elements input[type='text'],
+.popup .form .form-elements input[type='text'],
+.popup .form .form-elements input[type='password'],
+.popup .form .form-elements input[type='password'] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.popup .form button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgb(7, 110, 7);
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+a{
+    display: inline;
+    text-align: right;
+}
